@@ -1,51 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= title %></title>
+<% include templates/header.ejs %>
 
-  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css">
-  <link rel='stylesheet' href='/Content/style.css' />
-</head>
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/">Manavdeep Singh</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-
-                 
-          
-          <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="/home"><i class="fa-solid fa-house-chimney-window"></i>Home</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="/about"><i class="fa-solid fa-circle-info"></i>About Me</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="/projects"><i class="fa-solid fa-briefcase"></i></i>Projects</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="/services"><i class="fa-solid fa-bell-concierge"></i>Services</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="/contact"><i class="fa-solid fa-phone"></i>Contact Me</a>
-          </li>
-          
-      </div>
-    </div>
-  </nav>
-
+<% include templates/main_nav.ejs %> 
+  
 
 <main class="container">
   <div class="jumbotron">
@@ -54,19 +10,13 @@
   </div>
 </main>
 
+<% include templates/bottom_nav.ejs %>
 
- <footer>
-   <nav class="navbar fixed-bottom navbar-dark bg-dark">
-    <h6 class="display-6 navbar-text ">&copy; Copyright 2022. All rights reserved</h6>
-   </nav>
-</footer>
+<% include templates/footer.ejs %> 
 
-  <script src="/bootstrap/dist/css/bootstrap.min.js"></script>
-  <script src="/jquery/dist/jquery/min.js"></script>
-  <script src="/Scripts/app.js"></script>
-</body>
-</html>
 
+
+  
 
 
 
