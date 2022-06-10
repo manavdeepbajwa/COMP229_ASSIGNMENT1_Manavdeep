@@ -6,49 +6,103 @@
 <main class="container">
   <div class="jumbotron">
     <h1 class="display-4">Welcome to the <%= title %> page</h1>
+  
    
   </div>
 
-  <% if(title == "Home") { %> 
-  <div style="padding-top: 20px;">
-    Hola! Welcome everyone to my Personal Homepage. <br>
-     <br> <br>
+  <% if (title == "Home") {%>
+    <div style="padding-top: 20px;">
+      Hola! Welcome everyone to my Personal Homepage. <br>
+       <br> <br>
 
-    I am really happy to know that you dropped by my webpage to know more about me. 
-     
-    <br><br><br>
-    <strong>Mission</strong> <br>
-    A software engineering student passionate about programming. <br>
-    I am interested in working for a company that would make utilization of my potential. <br>
-    I am open to work from any location.
-</div>
-<% } %> 
+      I am really happy to know that you dropped by my webpage to know more about me. 
+       
+      <br><br><br>
+      <strong>Mission</strong> <br>
+      A software engineering student passionate about programming. <br>
+      I am interested in working for a company that would make utilization of my potential. <br>
+      I am open to work from any location.
+  </div>
+    <% } %>  
 
-<% if(title == "About") { %> 
-  <div style="padding-top: 20px;">
-    <h2>About me</h2>
-    <img src="/Assets/images/20220327_162812.jpg" />
-    <table>
-        <tr> 
-            <td>Name: </td>
-            <td>Manavdeep Singh</td>
-        </tr>
-        <tr> 
+  <% if(title == "About Me") { %>
+    <div style="padding-top: 20px;">
+      <h2>About me</h2>
+      <img src="/Assets/images/20220327_162812.jpg" height="450px" width="340px"/>
+      <table>
+          <tr> 
+              <td>Name: </td> <br>
+              <td>Manavdeep Singh</td>
+          </tr>
+          <tr> 
             <td valign="top">About me: </td>
-            <td>
-                My name is Manavdeep Singh. I'm Software engineering student at Centennnial College, Toronto , Canada. I was born and raised in Jammu, Jammu and Kashmir, India. <br>
-                I did my high school in 2019 and decided to move to Canada for my higher studies .  <br>
-                I have a lot of hobbies,I like to travel, sing, write, act, play cricket and much more.I have YouTube channel where I post my content related to singing, rapping and wiritng.I would really love to travel more and more in future, if I have a job that allows me to work remotely will really help me.<br>
-                I am a people's person I love meeting new people going out with friends , attend weddings stuff like that. 
-            </td>
-        </tr>
-        <tr> 
-            <td>Resume: </td>
-            <td><a href="Assets/Manavdeep-Singh (2).pdf">Click Here</a></td>
-        </tr>
-    </table>
-</div>
-<% } %> 
+              <td>
+                  My name is Manavdeep Singh. I'm Software engineering student at Centennnial College, Toronto , Canada. I was born and raised in Jammu, Jammu and Kashmir, India. <br>
+                  I did my high school in 2019 and decided to move to Canada for my higher studies .  <br>
+                  I have a lot of hobbies,I like to travel, sing, write, act, play cricket and much more.I have YouTube channel where I post my content related to singing, rapping and wiritng.I would really love to travel more and more in future, if I have a job that allows me to work remotely will really help me.<br>
+                  I am a people's person I love meeting new people going out with friends , attend weddings stuff like that. 
+              </td>
+          </tr>
+          <tr> 
+              <td>Resume: </td>
+              <td><a href="/Assets/Manavdeep-Singh (2).pdf">Click Here</a></td>
+          </tr>
+      </table>
+  </div>
+    <% } %>  
+
+  <% if(title=="Projects") { %> 
+    <div style="padding-top: 20px;">
+      <h2>Projects</h2>
+      
+              <td>
+                  <strong>HandyMan Services application</strong><br>
+                  I dont have any big projects of my own right now but I will love to work on a project that is my idea to make life easier of the home owners:
+                  <br>
+                 
+              </td>
+             An essential home services application where customers can book appointment for various home needs in one application like:
+               <li> HVAC services</li>
+                <li> Plumbing services</li>
+
+                <li> Electrician services</li>
+               
+         
+  </div>
+    <% } %> 
+
+  <% if(title == "Services") { %> 
+    <div style="padding-top: 20px;">
+      <h2>Services</h2>
+      <ol>
+          <li>Website Development</li>
+          <li>C# programming</li>
+          <li>Content writer</li>
+
+      </ol>
+  </div>
+  <% } %> 
+
+  <% if(title=="Contact Me") { %> 
+    <div style="padding-top: 20px;">
+      <h2>Contact Me</h2>
+      <table>
+          <tr>
+              <td>Contact number: </td>
+              <td>(+647) 862 1181</td>
+          </tr>
+              
+          <tr>
+              <td>Email</td>
+             <td> manavvvv22@gmail.com</td>
+          </tr>
+      </table>
+  </div>
+    <% } %> 
+
+
+
+
 </main>
 
 <%- include ('templates/bottom_nav.ejs'); %>
