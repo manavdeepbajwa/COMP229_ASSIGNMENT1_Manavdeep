@@ -1,3 +1,4 @@
+/* Manavdeep Singh 301141024 COMP229*/
 var express = require('express');
 var router = express.Router();
 
@@ -23,7 +24,7 @@ router.get('/projects', function(req, res, next) {
 
 /* GET Services page. */
 router.get('/services', function(req, res, next) {
-  res.render('index', { title: 'Services ' });
+  res.render('index', { title: 'Services' });
 });
 
 /* GET Contact page. */
